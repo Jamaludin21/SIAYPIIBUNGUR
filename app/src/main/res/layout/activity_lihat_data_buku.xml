@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LihatDataGuru">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="200dp"
+        android:text="@string/textview"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_alignStart="@+id/textView1"
+        android:layout_marginTop="20dp"
+        android:text="@string/textview"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="20dp"
+        android:text="@string/textview"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="20dp"
+        android:text="@string/textview"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="20dp"
+        android:text="@string/textview"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/TextView05"
+        android:layout_width="91dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignStart="@+id/TextView03"
+        android:layout_alignBottom="@+id/textView5"
+        android:text="@string/kota"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignStart="@+id/TextView04"
+        android:layout_alignBottom="@+id/textView4"
+        android:text="@string/penerbit"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignStart="@+id/TextView02"
+        android:layout_alignBottom="@+id/textView3"
+        android:text="@string/tahun_terbit"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="91dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignStart="@+id/TextView01"
+        android:layout_alignBottom="@+id/textView2"
+        android:text="@string/nama_lihat"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="91dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:text="@string/nomor_lihat"
+        android:textColor="@color/black"
+        />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/TextView05"
+        android:layout_below="@+id/TextView05"
+        android:layout_marginTop="34dp"
+        android:drawableStart="@android:drawable/ic_media_previous"
+        android:text="@string/kembali" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button1"
+        android:layout_alignStart="@id/button1"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="104dp"
+        android:contentDescription="@string/bukuperpustakaan"
+        tools:srcCompat="@drawable/pragmaticprogrammer" />
+</RelativeLayout>

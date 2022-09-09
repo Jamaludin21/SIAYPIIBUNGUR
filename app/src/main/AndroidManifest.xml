@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.siaypiibungur">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher_km"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_km"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SIAYPIIBUNGUR"
+        tools:targetApi="31">
+        <activity
+            android:name=".UpdateDataBuku"
+            android:exported="false" />
+        <activity
+            android:name=".LihatDataBuku"
+            android:exported="false" />
+        <activity
+            android:name=".BuatDataBuku"
+            android:exported="false" />
+        <activity
+            android:name=".SaranaPrasarana"
+            android:exported="false" />
+        <activity
+            android:name=".AbsensiGuru"
+            android:exported="false" />
+        <activity
+            android:name=".DataBuku"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateDataGuru"
+            android:exported="false" />
+        <activity
+            android:name=".LihatDataGuru"
+            android:exported="false" />
+        <activity
+            android:name=".BuatDataGuru"
+            android:exported="false" />
+        <activity
+            android:name=".DataGuru"
+            android:exported="false" />
+        <activity
+            android:name=".Manajerial"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".MenuGame"
+            android:exported="true" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

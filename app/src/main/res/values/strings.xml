@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Sistem Informasi Akademik</string>
+    <string name="title_text">SIA YPII BUNGUR</string>
+    <string name="splash">logo</string>
+    <string name="aplikasi_literasi">Aplikasi Literasi</string>
+    <string name="aplikasi_numerasi">Aplikasi Numerasi</string>
+    <string name="logo_dts">logo</string>
+    <string name="username">Nama Pengguna</string>
+    <string name="password">Kata Sandi</string>
+    <string name="btn_login">Masuk</string>
+    <string name="data_guru">Data Guru SMP YPII</string>
+    <string name="data_buku_perpustakaan">Data Buku Perpustakaan</string>
+    <string name="data_alat_praktikum">Data Alat Praktikum</string>
+    <string name="absensi_guru">Absensi Guru</string>
+    <string name="buat_biodata_baru">Buat Data Baru</string>
+    <string name="simpan">Simpan</string>
+    <string name="kembali">Kembali</string>
+    <string name="nomor">Nomor</string>
+    <string name="nama">Nama</string>
+    <string name="textview">TextView</string>
+    <string name="alamat">Alamat :</string>
+    <string name="jenis_kelamin">Jenis Kelamin :</string>
+    <string name="tanggal_lahir">Tanggal Lahir :</string>
+    <string name="nama_lihat">Nama :</string>
+    <string name="nomor_lihat">Nomor :</string>
+    <string name="update">Update</string>
+    <string name="data_sarana_dan_prasarana">Data Sarana dan Prasarana</string>
+    <string name="tahun_terbit">Tahun Terbit :</string>
+    <string name="penerbit">Penerbit :</string>
+    <string name="kota">Kota :</string>
+    <string name="bukuperpustakaan">BukuPerpustakaan</string>
+</resources>
