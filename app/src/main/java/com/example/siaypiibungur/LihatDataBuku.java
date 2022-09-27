@@ -13,7 +13,7 @@ public class LihatDataBuku extends AppCompatActivity {
     protected Cursor cursor;
     DataHelper dbHelper;
     Button ton2;
-    TextView text1, text2, text3, text4, text5;
+    TextView text1, text2, text3, text4, text5, text6;
     ImageView img;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,7 @@ public class LihatDataBuku extends AppCompatActivity {
         text3 = findViewById(R.id.textView3);
         text4 = findViewById(R.id.textView4);
         text5 = findViewById(R.id.textView5);
+        text6 = findViewById(R.id.textView6);
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         cursor = db.rawQuery("SELECT * FROM perpustakaan WHERE nama = '" +
                 getIntent().getStringExtra("nama") + "'",null);
@@ -37,6 +38,7 @@ public class LihatDataBuku extends AppCompatActivity {
             text3.setText(cursor.getString(2));
             text4.setText(cursor.getString(3));
             text5.setText(cursor.getString(4));
+            text6.setText(cursor.getString(5));
         }
         ton2 = findViewById(R.id.button1);
         ton2.setOnClickListener(arg0 -> {

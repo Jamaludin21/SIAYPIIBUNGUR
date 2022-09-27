@@ -6,16 +6,20 @@
         <entry key="..\:/Users/jamal/AndroidStudioProjects/SIAYPIIBUNGUR/app/src/main/res/layout/activity_absensi_guru.xml" value="0.12563323201621074" />
         <entry key="..\:/Users/jamal/AndroidStudioProjects/SIAYPIIBUNGUR/app/src/main/res/layout/activity_buat_data_buku.xml" value="0.25833333333333336" />
         <entry key="..\:/Users/jamal/AndroidStudioProjects/SIAYPIIBUNGUR/app/src/main/res/layout/activity_buat_data_guru.xml" value="0.1" />
-        <entry key="..\:/Users/jamal/AndroidStudioProjects/SIAYPIIBUNGUR/app/src/main/res/layout/activity_data_buku.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/jamal/AndroidStudioProjects/SIAYPIIBUNGUR/app/src/main/res/layout/activity_data_buku.xml" value="0.1" />
         <entry key="..\:/Users/jamal/AndroidStudioProjects/SIAYPIIBUNGUR/app/src/main/res/layout/activity_data_guru.xml" value="0.1" />
         <entry key="..\:/Users/jamal/AndroidStudioProjects/SIAYPIIBUNGUR/app/src/main/res/layout/activity_lihat_data_buku.xml" value="0.25833333333333336" />
         <entry key="..\:/Users/jamal/AndroidStudioProjects/SIAYPIIBUNGUR/app/src/main/res/layout/activity_lihat_data_guru.xml" value="0.4" />
+        <entry key="..\:/Users/jamal/AndroidStudioProjects/SIAYPIIBUNGUR/app/src/main/res/layout/activity_lihat_data_sarana_prasarana.xml" value="0.13903985507246377" />
         <entry key="..\:/Users/jamal/AndroidStudioProjects/SIAYPIIBUNGUR/app/src/main/res/layout/activity_login.xml" value="0.25833333333333336" />
         <entry key="..\:/Users/jamal/AndroidStudioProjects/SIAYPIIBUNGUR/app/src/main/res/layout/activity_main.xml" value="0.24427083333333333" />
         <entry key="..\:/Users/jamal/AndroidStudioProjects/SIAYPIIBUNGUR/app/src/main/res/layout/activity_manajerial.xml" value="0.25833333333333336" />
         <entry key="..\:/Users/jamal/AndroidStudioProjects/SIAYPIIBUNGUR/app/src/main/res/layout/activity_menu_game.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/jamal/AndroidStudioProjects/SIAYPIIBUNGUR/app/src/main/res/layout/activity_sarana_prasarana.xml" value="0.11388888888888889" />
         <entry key="..\:/Users/jamal/AndroidStudioProjects/SIAYPIIBUNGUR/app/src/main/res/layout/activity_splash_screen.xml" value="0.21052631578947367" />
-        <entry key="..\:/Users/jamal/AndroidStudioProjects/SIAYPIIBUNGUR/app/src/main/res/layout/activity_update_data_guru.xml" value="0.1" />
+        <entry key="..\:/Users/jamal/AndroidStudioProjects/SIAYPIIBUNGUR/app/src/main/res/layout/activity_update_data_buku.xml" value="0.2545289855072464" />
+        <entry key="..\:/Users/jamal/AndroidStudioProjects/SIAYPIIBUNGUR/app/src/main/res/layout/activity_update_data_guru.xml" value="0.4" />
+        <entry key="..\:/Users/jamal/AndroidStudioProjects/SIAYPIIBUNGUR/app/src/main/res/layout/activity_update_data_sarana_prasarana.xml" value="0.13903985507246377" />
         <entry key="..\:/Users/jamal/AndroidStudioProjects/SIAYPIIBUNGUR/app/src/main/res/mipmap-anydpi-v26/ic_launcher_KM.xml" value="0.1" />
       </map>
     </option>

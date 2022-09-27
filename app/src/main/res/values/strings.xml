@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Sistem Informasi Akademik</string>
+    <string name="app_name">Data Buku Perpustakaan</string>
     <string name="title_text">SIA YPII BUNGUR</string>
     <string name="splash">logo</string>
     <string name="aplikasi_literasi">Aplikasi Literasi</string>
@@ -29,4 +29,5 @@
     <string name="penerbit">Penerbit :</string>
     <string name="kota">Kota :</string>
     <string name="bukuperpustakaan">BukuPerpustakaan</string>
+    <string name="sumber">Sumber :</string>
 </resources>

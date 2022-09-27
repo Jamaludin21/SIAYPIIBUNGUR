@@ -22,40 +22,40 @@ public class Login extends AppCompatActivity {
         Button btn_login = findViewById(R.id.button);
 
         btn_login.setOnClickListener(view -> {
-            if ((Objects.requireNonNull(Username.getEditText()).getText().toString().equals("siswaYPII") &&
+//            if ((Objects.requireNonNull(Username.getEditText()).getText().toString().equals("siswaYPII") &&
+//                    Objects.requireNonNull(Password.getEditText()).getText().toString().equals("bungurbekasi"))) {
+//                Toast.makeText(this, "Mengalihkan.....", Toast.LENGTH_SHORT).show();
+//                Intent intent = new Intent(this,MenuGame.class);
+//                startActivity(intent);
+//                if (Username.getEditText().getText().toString().equals("")){
+//                    Toast.makeText(this, "Nama Pengguna tidak boleh kosong!", Toast.LENGTH_SHORT).show();
+//                }else if (!Username.getEditText().getText().toString().equals("siswaYPII")) {
+//                    Toast.makeText(this, "Nama Pengguna Salah!", Toast.LENGTH_SHORT).show();
+//                }
+//                if (Password.getEditText().getText().toString().equals("")) {
+//                    Toast.makeText(this, "Kata Sandi tidak boleh kosong!", Toast.LENGTH_SHORT).show();
+//                }else if (!Password.getEditText().getText().toString().equals("bungurbekasi")){
+//                    Toast.makeText(this, "Kata Sandi Salah!", Toast.LENGTH_SHORT).show();
+//                }
+//            }
+
+
+            if ((Objects.requireNonNull(Username.getEditText()).getText().toString().equals("guruYPII") &&
                     Objects.requireNonNull(Password.getEditText()).getText().toString().equals("bungurbekasi"))) {
                 Toast.makeText(this, "Mengalihkan.....", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(this,MenuGame.class);
+                Intent intent = new Intent(this,DataBuku.class);
                 startActivity(intent);
-            }
-            if (Username.getEditText().getText().toString().equals("")){
-                Toast.makeText(this, "Nama Pengguna tidak boleh kosong!", Toast.LENGTH_SHORT).show();
-            }else if (!Username.getEditText().getText().toString().equals("siswaYPII")) {
-                Toast.makeText(this, "Nama Pengguna Salah!", Toast.LENGTH_SHORT).show();
-            }
-            if (Password.getEditText().getText().toString().equals("")) {
-                Toast.makeText(this, "Kata Sandi tidak boleh kosong!", Toast.LENGTH_SHORT).show();
-            }else if (!Password.getEditText().getText().toString().equals("bungurbekasi")){
-                Toast.makeText(this, "Kata Sandi Salah!", Toast.LENGTH_SHORT).show();
-            }
+                if (Username.getEditText().getText().toString().equals("")){
+                    Toast.makeText(this, "Nama Pengguna tidak boleh kosong!", Toast.LENGTH_SHORT).show();
+                }else if (!Username.getEditText().getText().toString().equals("guruYPII")) {
+                    Toast.makeText(this, "Nama Pengguna Salah!", Toast.LENGTH_SHORT).show();
+                }
 
-
-            else if ((Objects.requireNonNull(Username.getEditText()).getText().toString().equals("guruYPII") &&
-                    Objects.requireNonNull(Password.getEditText()).getText().toString().equals("bungurbekasi"))) {
-                Toast.makeText(this, "Mengalihkan.....", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(this,Manajerial.class);
-                startActivity(intent);
-            }
-            if (Username.getEditText().getText().toString().equals("")){
-                Toast.makeText(this, "Nama Pengguna tidak boleh kosong!", Toast.LENGTH_SHORT).show();
-            }else if (!Username.getEditText().getText().toString().equals("guruYPII")) {
-                Toast.makeText(this, "Nama Pengguna Salah!", Toast.LENGTH_SHORT).show();
-            }
-
-            if (Password.getEditText().getText().toString().equals("")) {
-                Toast.makeText(this, "Kata Sandi tidak boleh kosong!", Toast.LENGTH_SHORT).show();
-            }else if (!Password.getEditText().getText().toString().equals("bungurbekasi")){
-                Toast.makeText(this, "Kata Sandi Salah!", Toast.LENGTH_SHORT).show();
+                if (Password.getEditText().getText().toString().equals("")) {
+                    Toast.makeText(this, "Kata Sandi tidak boleh kosong!", Toast.LENGTH_SHORT).show();
+                }else if (!Password.getEditText().getText().toString().equals("bungurbekasi")){
+                    Toast.makeText(this, "Kata Sandi Salah!", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }

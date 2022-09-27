@@ -48,16 +48,38 @@
         android:text="@string/textview"
         android:textColor="@color/black"
         />
+
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView4"
         android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
         android:layout_marginTop="20dp"
         android:text="@string/textview"
-        android:textColor="@color/black"
-        />
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView5"
+        android:layout_alignStart="@id/textView5"
+        android:layout_marginTop="20dp"
+        android:text="@string/textview"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/textView06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextView05"
+        android:layout_alignStart="@id/TextView05"
+        android:layout_marginTop="20dp"
+        android:text="@string/sumber"
+        android:textColor="@color/black"/>
+
+
 
     <TextView
         android:id="@+id/TextView05"
@@ -67,8 +89,9 @@
         android:layout_alignStart="@+id/TextView03"
         android:layout_alignBottom="@+id/textView5"
         android:text="@string/kota"
-        android:textColor="@color/black"
-        />
+        android:textColor="@color/black" />
+
+
 
     <TextView
         android:id="@+id/TextView03"
@@ -119,7 +142,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/TextView05"
-        android:layout_below="@+id/TextView05"
+        android:layout_below="@+id/textView06"
         android:layout_marginTop="34dp"
         android:drawableStart="@android:drawable/ic_media_previous"
         android:text="@string/kembali" />
