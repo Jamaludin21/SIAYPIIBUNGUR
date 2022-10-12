@@ -79,27 +79,7 @@
         android:text="@string/sumber"
         android:textColor="@color/black"/>
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView6"
-        android:layout_alignStart="@+id/textView5"
-        android:layout_marginTop="20dp"
-        android:text="@string/textview"
-        android:textColor="@color/black"
-        />
 
-    <TextView
-        android:id="@+id/textView07"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView06"
-        android:layout_alignStart="@+id/textView06"
-        android:layout_marginTop="20dp"
-        android:text="@string/jumlah"
-        android:textColor="@color/black"
-        />
 
     <TextView
         android:id="@+id/TextView05"
@@ -162,7 +142,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/TextView05"
-        android:layout_below="@+id/textView07"
+        android:layout_below="@+id/textView06"
         android:layout_marginTop="34dp"
         android:drawableStart="@android:drawable/ic_media_previous"
         android:text="@string/kembali" />

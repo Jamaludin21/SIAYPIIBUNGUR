@@ -14,7 +14,7 @@ public class UpdateDataBuku extends AppCompatActivity {
     protected Cursor cursor;
     DataHelper dbHelper;
     Button ton1, ton2;
-    EditText text1, text2, text3, text4, text5, text6 , text7;
+    EditText text1, text2, text3, text4, text5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,10 +26,8 @@ public class UpdateDataBuku extends AppCompatActivity {
         text3 = findViewById(R.id.editText3);
         text4 = findViewById(R.id.editText4);
         text5 = findViewById(R.id.editText5);
-        text6 = findViewById(R.id.editText6);
-        text7 = findViewById(R.id.editText7);
         SQLiteDatabase db = dbHelper.getReadableDatabase();
-        cursor = db.rawQuery("SELECT * FROM donasi WHERE nama = '" +
+        cursor = db.rawQuery("SELECT * FROM perpustakaan WHERE nama = '" +
                 getIntent().getStringExtra("nama") + "'", null);
         cursor.moveToFirst();
         if (cursor.getCount() > 0) {
@@ -39,8 +37,6 @@ public class UpdateDataBuku extends AppCompatActivity {
             text3.setText(cursor.getString(2));
             text4.setText(cursor.getString(3));
             text5.setText(cursor.getString(4));
-            text6.setText(cursor.getString(5));
-            text7.setText(cursor.getString(6));
         }
         ton1 = findViewById(R.id.button1);
         ton2 = findViewById(R.id.button2);
@@ -48,17 +44,15 @@ public class UpdateDataBuku extends AppCompatActivity {
         ton1.setOnClickListener(arg0 -> {
             // TODO Auto-generated method stub
             SQLiteDatabase db1 = dbHelper.getWritableDatabase();
-            db1.execSQL("update donasi set nama='" +
+            db1.execSQL("update perpustakaan set nama='" +
                     text2.getText().toString() + "', tahun_terbit='" +
                     text3.getText().toString() + "', penerbit='" +
                     text4.getText().toString() + "', kota='" +
-                    text5.getText().toString() + "', sumber='" +
-                    text6.getText().toString() + "', jumlah='" +
-                    text7.getText().toString() + "' where no='" +
+                    text5.getText().toString() + "' where no='" +
                     text1.getText().toString() + "'");
-            Toast.makeText(getApplicationContext(), "Berhasil Update Data!",
+            Toast.makeText(getApplicationContext(), "Berhasil",
                     Toast.LENGTH_LONG).show();
-            DataBuku.ma.RefreshList();
+            DataGuru.ma.RefreshList();
             finish();
         });
         ton2.setOnClickListener(arg0 -> {

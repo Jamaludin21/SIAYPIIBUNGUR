@@ -58,7 +58,6 @@
         android:layout_below="@+id/textView3"
         android:hint="yyyy"
         android:inputType="date" />
-
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
@@ -75,7 +74,6 @@
         android:layout_alignStart="@+id/textView4"
         android:layout_below="@+id/textView4"
         android:inputType="text" />
-
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
@@ -94,43 +92,6 @@
         android:layout_alignStart="@+id/textView5"
         android:layout_below="@+id/textView5" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editText5"
-        android:layout_below="@+id/editText5"
-        android:layout_marginTop="10dp"
-        android:inputType="text"
-        android:maxLength="100"
-        android:text="@string/sumber"
-        android:textColor="@color/black"/>
-    <EditText
-        android:id="@+id/editText6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView6"
-        android:layout_below="@+id/textView6" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editText6"
-        android:layout_below="@+id/editText6"
-        android:layout_marginTop="10dp"
-        android:inputType="number"
-        android:maxLength="100"
-        android:text="@string/jumlah"
-        android:textColor="@color/black"/>
-
-    <EditText
-        android:id="@+id/editText7"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView7"
-        android:layout_below="@+id/textView7"
-        android:inputType="number"/>
     <Button
         android:id="@+id/button1"
         style="?android:attr/borderlessButtonStyle"
