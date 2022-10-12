@@ -11,13 +11,33 @@
         android:layout_gravity="center"
         android:orientation="vertical">
 
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:text="@string/absensi_guru"-->
+<!--            android:layout_marginHorizontal="20dp"-->
+<!--            android:id="@+id/btn_start_absensi"-->
+<!--            android:backgroundTint="#3aa8c1">-->
+<!--        </Button>-->
+
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:text="@string/data_guru"-->
+<!--            android:layout_marginHorizontal="20dp"-->
+<!--            android:id="@+id/btn_start_data_guru"-->
+<!--            android:backgroundTint="#3aa8c1">-->
+<!--        </Button>-->
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="@string/absensi_guru"
+            android:text="@string/buku_perpustakaan_donasi"
             android:layout_marginHorizontal="20dp"
-            android:id="@+id/btn_start_absensi"
+            android:id="@+id/btn_start_donasi"
             android:backgroundTint="#3aa8c1">
         </Button>
 
@@ -25,29 +45,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="@string/data_guru"
+            android:text="@string/buku_perpustakaan_sekolah"
             android:layout_marginHorizontal="20dp"
-            android:id="@+id/btn_start_data_guru"
-            android:backgroundTint="#3aa8c1">
-        </Button>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="@string/data_buku_perpustakaan"
-            android:layout_marginHorizontal="20dp"
-            android:id="@+id/btn_start_data_buku"
-            android:backgroundTint="#3aa8c1">
-        </Button>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="@string/data_sarana_dan_prasarana"
-            android:layout_marginHorizontal="20dp"
-            android:id="@+id/btn_start_sarana_prasarana"
+            android:id="@+id/btn_start_sekolah"
             android:backgroundTint="#3aa8c1">
         </Button>
 

@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class UpdateDataBuku extends AppCompatActivity {
+public class UpdateDataBukuSekolah extends AppCompatActivity {
 
     protected Cursor cursor;
     DataHelper dbHelper;
@@ -29,7 +29,7 @@ public class UpdateDataBuku extends AppCompatActivity {
         text6 = findViewById(R.id.editText6);
         text7 = findViewById(R.id.editText7);
         SQLiteDatabase db = dbHelper.getReadableDatabase();
-        cursor = db.rawQuery("SELECT * FROM donasi WHERE nama = '" +
+        cursor = db.rawQuery("SELECT * FROM buku WHERE nama = '" +
                 getIntent().getStringExtra("nama") + "'", null);
         cursor.moveToFirst();
         if (cursor.getCount() > 0) {
@@ -48,7 +48,7 @@ public class UpdateDataBuku extends AppCompatActivity {
         ton1.setOnClickListener(arg0 -> {
             // TODO Auto-generated method stub
             SQLiteDatabase db1 = dbHelper.getWritableDatabase();
-            db1.execSQL("update donasi set nama='" +
+            db1.execSQL("update buku set nama='" +
                     text2.getText().toString() + "', tahun_terbit='" +
                     text3.getText().toString() + "', penerbit='" +
                     text4.getText().toString() + "', kota='" +
@@ -58,7 +58,7 @@ public class UpdateDataBuku extends AppCompatActivity {
                     text1.getText().toString() + "'");
             Toast.makeText(getApplicationContext(), "Berhasil Update Data!",
                     Toast.LENGTH_LONG).show();
-            DataBuku.ma.RefreshList();
+            DataBukuSekolah.ma.RefreshList();
             finish();
         });
         ton2.setOnClickListener(arg0 -> {

@@ -9,16 +9,16 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class LihatDataBuku extends AppCompatActivity {
+public class LihatDataBukuSekolah extends AppCompatActivity {
     protected Cursor cursor;
     DataHelper dbHelper;
     Button ton2;
-    TextView text1, text2, text3, text4, text5, text6,text7;
+    TextView text1, text2, text3, text4, text5, text6, text7;
     ImageView img;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lihat_data_buku);
+        setContentView(R.layout.activity_lihat_data_buku_sekolah);
         dbHelper = new DataHelper(this);
         text1 = findViewById(R.id.textView1);
         text2 = findViewById(R.id.textView2);
@@ -28,7 +28,7 @@ public class LihatDataBuku extends AppCompatActivity {
         text6 = findViewById(R.id.textView6);
         text7 = findViewById(R.id.textView7);
         SQLiteDatabase db = dbHelper.getReadableDatabase();
-        cursor = db.rawQuery("SELECT * FROM donasi WHERE nama = '" +
+        cursor = db.rawQuery("SELECT * FROM buku WHERE nama = '" +
                 getIntent().getStringExtra("nama") + "'",null);
         cursor.moveToFirst();
         if (cursor.getCount()>0)
@@ -47,7 +47,6 @@ public class LihatDataBuku extends AppCompatActivity {
             // TODO Auto-generated method stub
             finish();
         });
-//        img = findViewById(R.id.imageView);
-//        img.setImageResource(R.drawable.pragmaticprogrammer);
+        img = findViewById(R.id.imageView);
     }
 }
