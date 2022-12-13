@@ -13,7 +13,7 @@ public class LihatDataBukuSekolah extends AppCompatActivity {
     protected Cursor cursor;
     DataHelper dbHelper;
     Button ton2;
-    TextView text1, text2, text3, text4, text5, text6, text7;
+    TextView text1, text2, text3, text4, text5, text6, text7,text8;
     ImageView img;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,7 @@ public class LihatDataBukuSekolah extends AppCompatActivity {
         text5 = findViewById(R.id.textView5);
         text6 = findViewById(R.id.textView6);
         text7 = findViewById(R.id.textView7);
+        text8 = findViewById(R.id.textView8);
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         cursor = db.rawQuery("SELECT * FROM buku WHERE nama = '" +
                 getIntent().getStringExtra("nama") + "'",null);
@@ -41,12 +42,13 @@ public class LihatDataBukuSekolah extends AppCompatActivity {
             text5.setText(cursor.getString(4));
             text6.setText(cursor.getString(5));
             text7.setText(cursor.getString(6));
+            text8.setText(cursor.getString(7));
         }
         ton2 = findViewById(R.id.button1);
         ton2.setOnClickListener(arg0 -> {
             // TODO Auto-generated method stub
             finish();
         });
-        img = findViewById(R.id.imageView);
+//        img = findViewById(R.id.imageView);
     }
 }

@@ -91,6 +91,28 @@
         />
 
     <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginTop="20dp"
+        android:text="@string/textview"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/textView08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView07"
+        android:layout_alignStart="@+id/textView07"
+        android:layout_marginTop="20dp"
+        android:text="@string/status_peminjaman"
+        android:textColor="@color/black"
+        />
+
+    <TextView
         android:id="@+id/textView07"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -161,8 +183,8 @@
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/TextView05"
-        android:layout_below="@+id/textView07"
+        android:layout_alignStart="@+id/textView06"
+        android:layout_below="@+id/textView08"
         android:layout_marginTop="34dp"
         android:drawableStart="@android:drawable/ic_media_previous"
         android:text="@string/kembali" />

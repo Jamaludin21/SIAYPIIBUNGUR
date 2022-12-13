@@ -33,4 +33,11 @@
     <string name="buku_perpustakaan_donasi">Buku Perpustakaan (Donasi)</string>
     <string name="buku_perpustakaan_sekolah">Buku Perpustakaan (Sekolah)</string>
     <string name="jumlah">Jumlah :</string>
+    <string name="status_peminjaman">Status Peminjaman :</string>
+
+    <string-array name="status_peminjaman">
+        <item name="null"> </item>
+        <item name="Tersedia">Tersedia</item>
+        <item name="Dipinjam">Dipinjam</item>
+    </string-array>
 </resources>

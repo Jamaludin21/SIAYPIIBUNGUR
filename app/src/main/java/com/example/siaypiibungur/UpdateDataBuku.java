@@ -7,11 +7,14 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 public class UpdateDataBuku extends AppCompatActivity {
 
     protected Cursor cursor;
+    Spinner sts_peminjaman;
+    String data_peminjaman;
     DataHelper dbHelper;
     Button ton1, ton2;
     EditText text1, text2, text3, text4, text5, text6 , text7;
@@ -28,6 +31,8 @@ public class UpdateDataBuku extends AppCompatActivity {
         text5 = findViewById(R.id.editText5);
         text6 = findViewById(R.id.editText6);
         text7 = findViewById(R.id.editText7);
+        sts_peminjaman = findViewById(R.id.status);
+        data_peminjaman = String.valueOf(sts_peminjaman.getSelectedItem());
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         cursor = db.rawQuery("SELECT * FROM donasi WHERE nama = '" +
                 getIntent().getStringExtra("nama") + "'", null);
@@ -41,10 +46,10 @@ public class UpdateDataBuku extends AppCompatActivity {
             text5.setText(cursor.getString(4));
             text6.setText(cursor.getString(5));
             text7.setText(cursor.getString(6));
+            data_peminjaman = cursor.getString(7);
         }
         ton1 = findViewById(R.id.button1);
         ton2 = findViewById(R.id.button2);
-        // daftarkan even onClick pada btnSimpan
         ton1.setOnClickListener(arg0 -> {
             // TODO Auto-generated method stub
             SQLiteDatabase db1 = dbHelper.getWritableDatabase();
@@ -54,7 +59,8 @@ public class UpdateDataBuku extends AppCompatActivity {
                     text4.getText().toString() + "', kota='" +
                     text5.getText().toString() + "', sumber='" +
                     text6.getText().toString() + "', jumlah='" +
-                    text7.getText().toString() + "' where no='" +
+                    text7.getText().toString() + "', status='" +
+                    data_peminjaman + "' where no='" +
                     text1.getText().toString() + "'");
             Toast.makeText(getApplicationContext(), "Berhasil Update Data!",
                     Toast.LENGTH_LONG).show();
