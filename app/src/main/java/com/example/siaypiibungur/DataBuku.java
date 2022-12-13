@@ -10,7 +10,6 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
-
 import androidx.appcompat.app.AppCompatActivity;
 
 public class DataBuku extends AppCompatActivity {
@@ -35,7 +34,7 @@ public class DataBuku extends AppCompatActivity {
     }
     public void RefreshList(){
         SQLiteDatabase db = dbcenter.getReadableDatabase();
-        cursor = db.rawQuery("SELECT * FROM donasi",null);
+        cursor = db.rawQuery("SELECT * FROM perpustakaan",null);
         daftar = new String[cursor.getCount()];
         cursor.moveToFirst();
         for (int cc=0; cc < cursor.getCount(); cc++){
@@ -69,7 +68,7 @@ public class DataBuku extends AppCompatActivity {
                         break;
                     case 2 :
                         SQLiteDatabase db1 = dbcenter.getWritableDatabase();
-                        db1.execSQL("delete from donasi where nama = '"+selection+"'");
+                        db1.execSQL("delete from perpustakaan where nama = '"+selection+"'");
                         RefreshList();
                         Toast.makeText(ma, "Data Berhasil Dihapus!", Toast.LENGTH_SHORT).show();
                         break;
